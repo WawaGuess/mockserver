@@ -1,0 +1,14 @@
+# 服务基本配置
+server:
+  model: sql
+
+# 数据库配置
+spring:
+  datasource:
+    db: mock
+    url: jdbc:mysql://localhost:3306/${spring.datasource.db}?characterEncoding=utf-8&useSSL=false
+    username: root
+    password: root
+    # 这里的驱动可以根据pom中mysql-connector-java的包中Driver实际路径填写
+    driver-class-name: com.mysql.jdbc.Driver
+    min-pool-size: 5

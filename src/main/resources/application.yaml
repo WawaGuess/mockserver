@@ -1,0 +1,8 @@
+# 服务基本配置
+server:
+  port: 8090
+
+# 启动配置
+spring:
+  profiles:
+    active: sql
